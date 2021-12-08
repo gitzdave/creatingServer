@@ -8,9 +8,9 @@ http.createServer (function (req, res){
 }).listen("8080");
 
 
-var express = require ('express')
+var express = require ('express');
 var cors = require ('cors');
-var app = express()
+var app = express();
 app.use(cors());
 
 
