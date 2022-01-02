@@ -13,7 +13,7 @@ server = app.listen ('8080', function (){
 
 });
 
-app.get ('/books', function (req, res,next){
+app.get ('/', function (req, res,next){
  let sql = " SELECT NAME name FROM book ORDER BY name"
  var params = [];
  db.all ( sql, params, (err,rows)=> {
@@ -21,8 +21,8 @@ if (err){
 res.status(400).json({error: err.message});
 return;
 }
-res.json ({message:"success"},
-data.rows
+res.json ({message:"success",
+data:rows}
 )
  })
  
