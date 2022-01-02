@@ -23,3 +23,4 @@ db.run (sql,(err) => {
    db.run ( insert, [" IT book"]);
   }}
 );
+module.exports= db;
