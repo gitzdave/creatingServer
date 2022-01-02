@@ -6,7 +6,7 @@ if (err){
 console.error (err.message);
 throw err;
 }
-console.log ("connected");
+console.log ("Database connected");
 });
 
 const sql = "CREATE TABLE  book (name text)";
