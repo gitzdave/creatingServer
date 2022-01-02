@@ -9,7 +9,7 @@ throw err;
 console.log ("connected");
 });
 
-const sql = "CREATE TABLE  book (name text)";
+const sql = "CREATE TABLE  book (name text year text)";
 
 db.run (sql,(err) => {
   if (err){
@@ -17,10 +17,10 @@ db.run (sql,(err) => {
   }
   else {
     console.log ("table created");
-  var insert =" INSERT INTO book (name) VALUES (?)"
-   db.run ( insert, [" prgramming book"]);
-   db.run ( insert, [" Adventure book"]);
-   db.run ( insert, [" IT book"]);
+  var insert =" INSERT INTO book (name year) VALUES (?)"
+   db.run ( insert, [" prgramming book", "2013"]);
+   db.run ( insert, [" Adventure book", "2013"]);
+   db.run ( insert, [" IT book","2013"]);
   }}
 );
 module.exports= db;
