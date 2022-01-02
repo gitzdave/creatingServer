@@ -1,5 +1,6 @@
 var express = require ('express');
 var cors = require ('cors');
+var bodyParser = require("body-Parser")
 var app = express();
 app.use(cors());
 
@@ -12,6 +13,6 @@ server = app.listen ('8080', function (){
 });
 
 app.get ('/', function (req, res){
-  res.write("Hello people");
-  res.end();
+  res.json ({message:"ok"});
+
 });
