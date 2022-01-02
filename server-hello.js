@@ -1,8 +1,8 @@
 var express = require ('express');
 var cors = require ('cors');
-var bodyParser = require("body-Parser")
+var bodyParser = require("body-Parser");
 var app = express();
-var db = require ("./ database.js")
+var db = require ("./database.js")
 app.use(cors());
 
 
@@ -24,10 +24,6 @@ return;
 res.json ({message:"success"},
 data.rows
 )
-
  })
  
- 
-
-
 });
