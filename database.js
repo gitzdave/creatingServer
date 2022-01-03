@@ -9,7 +9,7 @@ throw err;
 console.log ("Database connected");
 });
 
-const sql = "CREATE TABLE  book (name text, genre text)";
+const sql = "CREATE TABLE  book (name text)";
 
 db.run (sql,(err) => {
   if (err){
@@ -17,7 +17,7 @@ db.run (sql,(err) => {
   }
   else {
     console.log ("table created");
-  var insert =" INSERT INTO book name,genre VALUES (?)"
+  var insert =" INSERT INTO book name VALUES (?)"
    db.run ( insert, [" prgramming book"], ["novel"]);
    db.run ( insert, [" Adventure book"],["novel"]);
    db.run ( insert, [" IT book"],["novel"]);

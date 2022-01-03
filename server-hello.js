@@ -14,7 +14,7 @@ server = app.listen ('8080', function (){
 });
 
 app.get ('/', function (req, res,next){
- let sql = " SELECT ( name,genre) FROM book ORDER BY name"
+ let sql = " SELECT Name name FROM book ORDER BY name"
  var params = [];
  db.all ( sql, params, (err,rows)=> {
 if (err){
