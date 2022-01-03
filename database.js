@@ -18,9 +18,9 @@ db.run (sql,(err) => {
   else {
     console.log ("table created");
   var insert =" INSERT INTO book name VALUES (?)"
-   db.run ( insert, [" prgramming book"], ["novel"]);
-   db.run ( insert, [" Adventure book"],["novel"]);
-   db.run ( insert, [" IT book"],["novel"]);
+   db.run ( insert, [" prgramming book"]);
+   db.run ( insert, [" Adventure book"]);
+   db.run ( insert, [" IT book"]);
   }}
 );
 module.exports= db;
