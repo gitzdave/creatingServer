@@ -17,7 +17,7 @@ db.run (sql,(err) => {
   }
   else {
     console.log ("table created");
-  var insert =" INSERT INTO book (name,genre) VALUES (?)"
+  var insert =" INSERT INTO book name,genre VALUES (?)"
    db.run ( insert, [" prgramming book"], ["novel"]);
    db.run ( insert, [" Adventure book"],["novel"]);
    db.run ( insert, [" IT book"],["novel"]);
